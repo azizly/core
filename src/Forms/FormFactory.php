@@ -337,11 +337,11 @@ class FormFactory implements FormFactoryInterface
     public function createSelectTitle($name)
     {
         return $this->createSelect($name)->fromArray(array(
-            'Ms.'  => __('Ms.'),
-            'Miss' => __('Miss'),
+//          'Ms.'  => __('Ms.'),
+//          'Miss' => __('Miss'),
             'Mr.'  => __('Mr.'),
             'Mrs.' => __('Mrs.'),
-            'Dr.'  => __('Dr.')
+//          'Dr.'  => __('Dr.')
         ))->placeholder();
     }
 
@@ -350,8 +350,8 @@ class FormFactory implements FormFactoryInterface
         return $this->createSelect($name)->fromArray(array(
             'F'           => __('Female'),
             'M'           => __('Male'),
-            'Other'       => __('Other'),
-            'Unspecified' => __('Unspecified')
+//          'Other'       => __('Other'),
+//          'Unspecified' => __('Unspecified')
         ))->placeholder();
     }
 
@@ -362,7 +362,7 @@ class FormFactory implements FormFactoryInterface
             'Father'          => __('Father'),
             'Step-Mother'     => __('Step-Mother'),
             'Step-Father'     => __('Step-Father'),
-            'Adoptive Parent' => __('Adoptive Parent'),
+//          'Adoptive Parent' => __('Adoptive Parent'),
             'Guardian'        => __('Guardian'),
             'Grandmother'     => __('Grandmother'),
             'Grandfather'     => __('Grandfather'),
@@ -475,6 +475,7 @@ class FormFactory implements FormFactoryInterface
                 'IDR Rp' => 'Indonesian Rupiah (Rp)',
                 'JMD $' => 'Jamaican Dollar ($)',
                 'KES KSh' => 'Kenyan Shilling (KSh)',
+                'LYD د.ل' => 'Libyan Dinar (د.ل)',
                 'MOP' => 'Macanese Pataca (MOP)',
                 'MGA' => 'Malagasy Ariary (Ar)',
                 'MVR Rf' => 'Maldivian Rufiyaa (Rf)',
